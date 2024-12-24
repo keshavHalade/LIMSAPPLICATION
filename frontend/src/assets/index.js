@@ -1,0 +1,1 @@
+export {default as LoginImg} from "./img/pp.png";
