@@ -1,12 +1,32 @@
-import React from 'react'
-import { Navbar } from '../component';
+import React from "react";
+import { Navbar, Sidebar } from "../component";
+import { MainContent } from "../containers";
+
 function Dashboard() {
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100">
+      {/* Navbar */}
       <Navbar />
-      <h1>Dashboard</h1>
+
+      {/* Main Content Area */}
+      <div className="d-flex flex-grow-1">
+        {/* Left Sidebar */}
+        <div className="d-none d-lg-flex flex-column col-lg-2 bg-light border-end overflow-auto">
+          <Sidebar sides="left" />
+        </div>
+
+        {/* Main Content */}
+        <div className="flex-grow-1 p-3 bg-white">
+          <MainContent />
+        </div>
+
+        {/* Right Sidebar */}
+        <div className="d-none d-lg-flex flex-column col-lg-2 bg-light border-start overflow-auto">
+          <Sidebar sides="right" />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Dashboard;
