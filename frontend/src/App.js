@@ -1,7 +1,6 @@
 import "./App.css";
 import { Dashboard, PatientDashboard } from "./containers";
-import { AddPatient } from "./pages";
-// import Patients from "./pages/Patients";
+import { AddPatient, Patient } from "./pages";
 import Login from "./useAuth/Login";
 import { Route, Routes } from "react-router-dom";
 import SignupForm from "./useAuth/SignUpForm";
@@ -13,7 +12,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignupForm />} />
         <Route path="/patientDash" element={<PatientDashboard />} />
-        {/* <Route path="/viewPatient" element={ <Patients />} /> */}
+        <Route path="/viewPatient" element={ <Patient />} />
         <Route path="/patientDash/add" element={ <AddPatient />} />
       </Routes>
     </div>

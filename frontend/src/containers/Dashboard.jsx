@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar, Sidebar } from "../component";
-import { MainContent } from "../containers";
 
 function Dashboard() {
   return (
@@ -17,7 +16,10 @@ function Dashboard() {
 
         {/* Main Content */}
         <div className="flex-grow-1 p-3 bg-white">
-          <MainContent />
+          {/* <MainContent /> */}
+          <h1>Lab Portal </h1>
+          <h4>Welcome to our lab portal</h4>
+          
         </div>
 
         {/* Right Sidebar */}

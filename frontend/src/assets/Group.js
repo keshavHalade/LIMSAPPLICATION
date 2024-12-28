@@ -20,11 +20,22 @@ const groups = [
   },
   {
     side: "left",
-    title: "Add Inventory",
+    title: "Patient",
     items: [
       {
         label: "Patient",
         value: "patientDash",
+        icon: faUsers,
+      },
+    ],
+  },
+  {
+    side: "left",
+    title: "Add Inventory",
+    items: [
+      {
+        label: "Add Inventory",
+        value: "inventory",
         icon: faUsers,
       },
     ],

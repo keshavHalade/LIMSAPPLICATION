@@ -14,7 +14,7 @@ function Navbar() {
     style={{ backgroundColor: "#e3f2fd" }}
   >
     <div className="container">
-      <a className="navbar-brand d-flex align-items-center" href="/home">
+      <a className="navbar-brand d-flex align-items-center" href="/">
         <img
           src={LoginImg}
           alt="Logo"
@@ -37,7 +37,7 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <a className="nav-link text-primary fw-semibold" href="home">
+            <a className="nav-link text-primary fw-semibold" href="/">
               Home
             </a>
           </li>
